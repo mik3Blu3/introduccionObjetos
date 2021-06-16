@@ -125,7 +125,29 @@ public class ejercicios{
                                 System.out.println(lib1);
                                 System.out.println("");
                                 break;
-                        case 7:
+                        case 7: 
+                                System.out.println("MOSTRAREMOS EL EJERCICIO 7");
+                                System.out.println("Ingrese el numerador y denominador de la primera fraccion: ");
+                                int num1 = entrada.nextInt();
+                                int den1 = entrada.nextInt();
+                                System.out.println("Ingrese el numerador y denominador de la segunda fraccion: ");
+                                int num2 = entrada.nextInt();
+                                int den2 = entrada.nextInt();
+                                //creando el objeto fraccion
+                                fraccion f1 =new fraccion(num1,den1, num2, den2);
+                                System.out.println("Realizaremos la suma y mostraremos el resultado");
+                                f1.sumaFracciones(num1, den1, num2, den2);
+                                System.out.println(f1.getSumaFraccione());
+                                System.out.println("Realizaremos la resta: ");
+                                f1.restaFracciones(num1, den1, num2, den2);
+                                System.out.println(f1.getRestaFraccione());
+                                System.out.println("Realizaremos la multiplicacion: ");
+                                f1.multiplicacionFracciones(num1, den1, num2, den2);
+                                System.out.println(f1.getMultiFraccione());
+                                System.out.println("Realizaremos la division de las fracciones: ");
+                                f1.divisionFracciones(num1, den1, num2, den2);
+                                System.out.println(f1.getDivFraccione());
+
                                 break;
                         case 8:
                                 break;

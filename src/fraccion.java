@@ -11,10 +11,12 @@ public class fraccion {
     private double multiplicacionFraccion;
     private double divisionFraccion;
     //constructor
-    public fraccion(int num, int den)
+    public fraccion(int num, int den, int num2, int den2)
     {
         this.numerador = num;
         this.denominador = den;
+        this.numerador2 = num2;
+        this.denominador2 = den2;
     }   
     //metodo que permite devolver el numerador
     public int getNumerador()
