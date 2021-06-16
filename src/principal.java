@@ -13,6 +13,7 @@ public class principal
     {
         System.out.println("BIENVENIDO!!! Ingrese el numero de ejercicio que desea ejecutar! (1-9) ó 10 = Salir!");
         int opcion = entrada.nextInt();
+        entrada.skip("\n");
         while(opcion != 10)
         {
             switch (opcion) {
@@ -71,9 +72,30 @@ public class principal
                         System.out.println("El perimetro del circulo es de : ");
                         System.out.println(circulo1.getPerimetroCirculo()+" U ");
                         System.out.println("");
-                        System.out.println("MOSTRANDO EL EJERCICIO4");
                 break;
                 case 4:
+                        System.out.println("MOSTRAREMOS EL EJERCICIO4 ");                        
+                        System.out.println("Ingrese el largo del rectangulo: ");
+                        int largoRectanguloAux = entrada.nextInt();
+                        System.out.println("Ingrese el ancho del rectangulo: ");
+                        int anchoRectanguloAux = entrada.nextInt();
+                        //corroborando que las dimensiones no sean las mismas 
+                        if(largoRectanguloAux != anchoRectanguloAux)
+                        {
+                            //creando el objeto de tipo rectangulo
+                            rectangulo rectangulo1 = new rectangulo(largoRectanguloAux, anchoRectanguloAux);
+                            System.out.println("El area del rectangulo con dimensiones: ancho "+rectangulo1.getAnchoRectangulo()+" Y largo "+rectangulo1.getLargoRectangulo()+" Es: ");
+                            //utilizando el metodo del objeto que nos permite calcular el area del rectangulo
+                            System.out.println(rectangulo1.getAreaRectangulo()+" U^2 ");
+                            System.out.println("El perimetro del rectangulo con las mismas dimensiones es de: ");
+                            //usando el metodo del objeto que nos permite calcular el perimetro del rectangulo
+                            System.out.println(rectangulo1.getPerimetroRectangulo()+" U ");
+                            System.out.println("");
+                        }else if(largoRectanguloAux == anchoRectanguloAux)
+                        {
+                            System.out.println("Corrobore las dimensiones nos indica que es un cuadrado ya que las dimensiones son las mismas!!! ");
+                            System.out.println("");
+                        }
                 break;
                 case 5:
                 break;
@@ -86,6 +108,7 @@ public class principal
                 case 9:
                 break;
                 case 10:
+                        opcion =10;
                 break;
             
                 default:
