@@ -38,7 +38,6 @@ public class principal
         System.out.println("El area del cuadrado es: ");
         //haciendo uso del metodo de nuestro objeto que nos permite calcular el area del cuadrado 
         cuadrado1.calcularArea();
-        System.out.println("");
         //mostrando el area almacenado en nuestro atributo
         System.out.println(cuadrado1.getArea()+" U^2");
         System.out.println("");
@@ -48,5 +47,19 @@ public class principal
         //mostrando el perimetro almacenado en nuestro atributo
         System.out.println(cuadrado1.getPerimetro()+" U ");
         System.out.println(""); 
+        System.out.println("MOSTRAREMOS EL EJERCICIO3");
+        System.out.println("Ingrese el radio del circulo: ");
+        double radioCirculoAux = entrada.nextDouble();
+        //inicializando el objeto de tipo circulo
+        circulo circulo1 = new circulo(radioCirculoAux);
+        System.out.println("El radio que ingreso fue: ");
+        System.out.println(circulo1.getRadio()+" U ");
+        System.out.println("");
+        System.out.println("El area es de: ");
+        System.out.println(circulo1.getAreaCirculo()+" U^2 ");
+        System.out.println("");
+        System.out.println("El perimetro del circulo es de : ");
+        System.out.println(circulo1.getPerimetroCirculo()+" U ");
+        System.out.println("");
     }
 }
