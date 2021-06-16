@@ -136,13 +136,17 @@ public class ejercicios{
                                 //creando el objeto fraccion
                                 fraccion f1 =new fraccion(num1,den1, num2, den2);
                                 System.out.println("Realizaremos la suma y mostraremos el resultado");
+                                f1.sumaFracciones();
                                 System.out.println(f1.getSumaFraccione());
                                 System.out.println("Realizaremos la resta: ");
                                 entrada.skip("\n");
+                                f1.restaFracciones();
                                 System.out.println(f1.getRestaFraccione());
                                 System.out.println("Realizaremos la multiplicacion: ");
+                                f1.multiplicacionFracciones();
                                 System.out.println(f1.getMultiFraccione());
                                 System.out.println("Realizaremos la division de las fracciones: ");
+                                f1.divisionFracciones();
                                 System.out.println(f1.getDivFraccione());
 
                                 break;

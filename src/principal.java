@@ -21,7 +21,9 @@ public class principal {
         //demostramos que las dos variables apuntan al mismo objeto
         cuadrado cua = cuadrado2;
         cua.setLadoCuadrado(4);
+        cuadrado2.calcularArea();
         System.out.println("El area es: "+cuadrado2.getArea());
+        cua.calcularPerimetro();
         System.out.println("El perimetro es: "+cua.getPerimetro());
         //demostramos que las dos variables apuntan al mismo objeto y espacio en memoria
         circulo circ = circulo2;
@@ -40,6 +42,10 @@ public class principal {
         //demostramos que las dos variables apuntan al mismo objeto
         fraccion fracc = fraccion2;
         fracc.SetNumerador(2);
+        fraccion2.sumaFracciones();
+        fracc.restaFracciones();
+        fraccion2.multiplicacionFracciones();
+        fracc.divisionFracciones();
         System.out.println("LA SUMA ES: "+fraccion2.sumaFracciones());
         System.out.println("LA RESTA ES: "+fracc.restaFracciones());
         System.out.println("LA MULTIPLICACION ES: "+fraccion2.multiplicacionFracciones());
