@@ -2,15 +2,15 @@ package src;
 
 import java.util.Scanner;
 
-public class principal {
+public class ejercicios{
         // declarando nuestro scanner para leer info en pantalla
         static Scanner entrada = new Scanner(System.in);
 
         public static void main(String args[]) {
-                principal p1 = new principal();
+                ejercicios p1 = new ejercicios();
         }
 
-        public principal() {
+        public ejercicios() {
                 System.out.println("BIENVENIDO!!! Ingrese el numero de ejercicio que desea ejecutar! (1-9) ó 10 = Salir!");
                 int opcion = entrada.nextInt();
                 entrada.skip("\n");
