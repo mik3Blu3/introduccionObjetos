@@ -79,23 +79,27 @@ public class fraccion {
         return divisionFraccion;
     }
     //metodo que permite realizar la suma de las fracciones
-    public void sumaFracciones(int num, int den, int num2, int den2)
+    public double sumaFracciones()
     {
-        this.sumaFraccion = (num*den2+num2*den)/den*den2;
+        this.sumaFraccion = (numerador*denominador2+numerador2*denominador)/(denominador*denominador2);
+        return sumaFraccion;
     }
      //metodo que permite realizar la resta de las fracciones
-    public void restaFracciones(int num, int den, int num2, int den2)
+    public double restaFracciones()
     {
-        this.sumaFraccion = (num*den2-num2*den)/den*den2;
+        this.restaFraccion = (numerador*denominador2-numerador2*denominador)/(denominador*denominador2);
+        return restaFraccion;
     }
     //metodo que permite realizar la multiplicacion de las fracciones
-    public void multiplicacionFracciones(int num, int den, int num2, int den2)
+    public double multiplicacionFracciones()
     {
-        this.multiplicacionFraccion = (num*num2)/den*den2;
+        this.multiplicacionFraccion = (numerador/denominador)*(numerador2/denominador2);
+        return multiplicacionFraccion;
     }
     //metodo que permite realizar la division de las fracciones
-    public void divisionFracciones(int num, int den, int num2, int den2)
+    public double divisionFracciones()
     {
-        this.divisionFraccion = (num*den2)/den*num2;
+        this.divisionFraccion = (numerador*denominador2)/denominador*numerador2;
+        return divisionFraccion;
     }
 }

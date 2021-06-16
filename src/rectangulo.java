@@ -20,6 +20,16 @@ public class rectangulo {
     public int getAnchoRectangulo() {
         return anchoRectangulo;
     }
+    //metodo que permite enviar ancho del rectangulo
+    public void setAnchoRectangulo(int anchoR)
+    {
+        this.anchoRectangulo = anchoR;
+    }
+    //metodo que permite enviar el largo del rectangulo
+    public void setLargoRectangulo(int largoR)
+    {
+        this.largoRectangulo = largoR;
+    }
 
     // metodo que permite realizar el calculo del area del rectangulo y devolverlo
     public int getAreaRectangulo() {
