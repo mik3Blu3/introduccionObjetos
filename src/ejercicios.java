@@ -11,7 +11,7 @@ public class ejercicios{
         }
 
         public ejercicios() {
-                System.out.println("BIENVENIDO!!! Ingrese el numero de ejercicio que desea ejecutar! (1-9) ó 10 = Salir!");
+                System.out.println("BIENVENIDO!!! Ingrese el numero de ejercicio que desea ejecutar! (1-8) ó 9 = Salir!");
                 int opcion = entrada.nextInt();
                 entrada.skip("\n");
                 switch (opcion) {
@@ -130,11 +130,8 @@ public class ejercicios{
                         case 8:
                                 break;
                         case 9:
-                                break;
-                        case 10:
                                 System.out.println("ELIGIO SALIR!");
-                                break;
-
+                        break;
                         default:
                                 System.out.println("INGRESE UNA OPCION CORRECTA!!! ");
                                 break;
