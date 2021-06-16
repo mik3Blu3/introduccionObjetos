@@ -12,7 +12,6 @@ public class contador {
     public contador() {
 
     }
-
     // metodo que permite obtener el contador
     public int getContador() {
         return contador;

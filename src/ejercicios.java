@@ -99,6 +99,31 @@ public class ejercicios{
                         case 5:
                                 break;
                         case 6:
+                                System.out.println("MOSTRAREMOS EL EJERCICIO5 ");
+                                System.out.println("Primero ingrese los datos para la creacion del libro! ");
+                                System.out.println("Ingrese el id que desee asignarle: ");
+                                int auxID = entrada.nextInt();
+                                entrada.skip("\n");
+                                System.out.println("Ingrese el nombre del libro: ");
+                                String auxNombre = entrada.nextLine();
+                                System.out.println("Ingrese la disponibilidad del libro: (true/false) ");
+                                boolean auxDisponibilidad = entrada.nextBoolean();
+                                //creando el objeto libro
+                                libro lib1 = new libro(auxID, auxNombre, auxDisponibilidad);
+                                System.out.println("LA INFORMACION ACTUAL ALMACENADA DEL LIBRO ES: ");
+                                System.out.println(lib1);
+                                System.out.println("a continuacion lo prestaremos!!! ");
+                                System.out.println("");
+                                //invocando al metodo del objeto para prestamo
+                                 lib1.prestamoLibro(lib1);
+                                 System.out.println("la info actual de libro  y su disponibilidad es: ");
+                                 System.out.println(lib1);
+                                System.out.println(" a continuacion lo devolveremos!! ");
+                                System.out.println("");
+                                lib1.devolucionLibro(lib1);
+                                System.out.println("La info actual del libro y su disponibilidad es: ");
+                                System.out.println(lib1);
+                                System.out.println("");
                                 break;
                         case 7:
                                 break;
